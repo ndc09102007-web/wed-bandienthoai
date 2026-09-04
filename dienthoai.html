@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cửa hàng điện thoại</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #1d1f20;
+            color: white;
+        }
+
+        h1 {
+            text-align: center;
+            margin: 40px 0 30px;
+            color: #ddd;
+        }
+
+        .products {
+            width: 1000px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .product {
+            background-color: #17191a;
+            border: 1px solid #333;
+            border-radius: 15px;
+            padding: 20px;
+        }
+
+        .product img {
+            width: 100%;
+            height: 300px;
+            object-fit: contain;
+            background-color: white;
+            border-radius: 10px;
+        }
+
+        .product h2 {
+            font-size: 20px;
+            color: #ddd;
+            margin: 15px 0;
+        }
+
+        .price {
+            color: red;
+            font-size: 22px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            border: none;
+            border-radius: 6px;
+            background-color: #087ff5;
+            color: white;
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0668c7;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>CỬA HÀNG ĐIỆN THOẠI</h1>
+
+    <div class="products">
+
+        <div class="product">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdsTZz5xd3oCpDZUD6isxnyHwyXTH-s91raOVXkGS-6A&s=10">
+
+            <h2>iPhone 17 Pro Max</h2>
+
+            <div class="price">
+                34.590.000 VNĐ
+            </div>
+
+            <button onclick="muaHang('iPhone 15 Pro Max')">
+                Mua ngay
+            </button>
+        </div>
+
+
+        <div class="product">
+            <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcTLBSR_6jC6aSzQwxwcjsXa4U_PweeHB8x-9gFFQHon1QWR9IkMNjx5zKNCIJ8274r9OrdsSSl6uq5mnllNGyrEx7tP53qGDBwnE6WGT2gEnhHX6tmkCppAoOd8_k4dbUvn4YwEM_I&usqp=CAc">
+
+            <h2>Samsung Galaxy S25 Ultra</h2>
+
+            <div class="price">
+                25.490.000 VNĐ
+            </div>
+
+            <button onclick="muaHang('Samsung Galaxy S25 Ultra')">
+                Mua ngay
+            </button>
+        </div>
+
+
+        <div class="product">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThRJpv2VZ3xxDA7rvK_S3iQlJb7UOU__K_GL7ijQGa4g&s=10">
+
+            <h2>Xiaomi redmi 17 pro max</h2>
+
+            <div class="price">
+                21.690.000 VNĐ
+            </div>
+
+            <button onclick="muaHang('Xiaomi 15 Ultra')">
+                Mua ngay
+            </button>
+        </div>
+
+    </div>
+
+
+    <script>
+
+        function muaHang(tenSanPham) {
+
+            alert("Bạn đã chọn mua: " + tenSanPham);
+
+        }
+
+    </script>
+
+</body>
+</html>
