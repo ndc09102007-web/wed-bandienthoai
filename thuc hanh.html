@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang thông tin sinh viên ICTU</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background-color: #dbe6f1;
+            color: #222;
+        }
+
+        /* Header Navigation */
+        header {
+            background-color: #002b66;
+            color: #ffffff;
+            text-align: center;
+            padding: 24px 20px 18px;
+        }
+
+        header h1 {
+            font-size: 22px;
+            font-weight: bold;
+            letter-spacing: 0.5px;
+            margin-bottom: 6px;
+            text-transform: uppercase;
+        }
+
+        header p {
+            font-size: 14px;
+            color: #d0e1f9;
+            margin-bottom: 24px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 45px;
+        }
+
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Layout Container */
+        .container {
+            max-width: 1200px;
+            margin: 30px auto;
+            padding: 0 20px;
+            display: flex;
+            gap: 24px;
+        }
+
+        /* Main Content & Sidebar */
+        .main-content {
+            flex: 2.3;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .sidebar {
+            flex: 1;
+        }
+
+        /* Cards */
+        .card {
+            background-color: #eaf2fa;
+            border: 1px solid #b8cde2;
+            padding: 20px 24px;
+        }
+
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 12px;
+        }
+
+        .card-title {
+            color: #1d4076;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .badge-new {
+            background-color: #ba2d22;
+            color: #ffffff;
+            font-size: 11px;
+            font-weight: bold;
+            padding: 2px 5px;
+            border-radius: 1px;
+        }
+
+        .card p {
+            font-size: 14.5px;
+            line-height: 1.5;
+            color: #333333;
+            margin-bottom: 12px;
+        }
+
+        .card p:last-child {
+            margin-bottom: 0;
+        }
+
+        /* Sidebar Styling */
+        .sidebar ul {
+            padding-left: 18px;
+            margin-top: 10px;
+        }
+
+        .sidebar li {
+            font-size: 14px;
+            line-height: 1.6;
+            color: #333333;
+            margin-bottom: 8px;
+        }
+
+        /* Responsive Layout */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>TRƯỜNG ĐẠI HỌC CÔNG NGHỆ THÔNG TIN VÀ TRUYỀN THÔNG</h1>
+        <p>Trang thông tin sinh viên ICTU</p>
+        <nav>
+            <a href="#">Trang chủ</a>
+            <a href="#">Tin tức</a>
+            <a href="#">Đào tạo</a>
+            <a href="#">Liên hệ</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <main class="main-content">
+            <section class="card">
+                <div class="card-header">
+                    <h2 class="card-title">Samsung Innovation Campus 2026 tại ICTU</h2>
+                    <span class="badge-new">NEW</span>
+                </div>
+                <p>Chương trình mang đến cho sinh viên cơ hội học tập và thực hành trong các lĩnh vực như Trí tuệ nhân tạo, Internet vạn vật, Dữ liệu lớn và Công nghệ bán dẫn.</p>
+                <p>Sinh viên được tiếp cận kiến thức thực tế, thực hiện dự án và phát triển kỹ năng làm việc trong môi trường doanh nghiệp.</p>
+            </section>
+
+            <section class="card">
+                <h2 class="card-title" style="margin-bottom: 12px;">Chương trình thực tập doanh nghiệp</h2>
+                <p>Sinh viên ICTU có cơ hội tham gia thực tập tại các doanh nghiệp, tiếp cận dự án thực tế và làm việc cùng các kỹ sư, chuyên gia.</p>
+                <p>Đây là cơ hội để sinh viên củng cố kiến thức chuyên môn, rèn luyện kỹ năng và chuẩn bị cho thị trường lao động.</p>
+            </section>
+
+            <section class="card">
+                <h2 class="card-title" style="margin-bottom: 12px;">Hoạt động học tập và nghiên cứu của sinh viên</h2>
+                <p>Nhà trường khuyến khích sinh viên tham gia nghiên cứu khoa học, các cuộc thi công nghệ, hoạt động đổi mới sáng tạo và các nhóm phát triển sản phẩm.</p>
+                <p>Những hoạt động này giúp sinh viên tăng khả năng tư duy, làm việc nhóm và giải quyết các bài toán thực tế.</p>
+            </section>
+        </main>
+
+        <aside class="sidebar">
+            <section class="card">
+                <h2 class="card-title">Thông báo mới</h2>
+                <ul>
+                    <li>Lịch học tuần mới của sinh viên.</li>
+                    <li>Thông báo đăng ký chương trình thực tập.</li>
+                    <li>Lịch kiểm tra và đánh giá học phần.</li>
+                    <li>Thông tin các chương trình đào tạo doanh nghiệp.</li>
+                </ul>
+            </section>
+            </aside>
+    </div>
+
+</body>
+</html>
